@@ -10,8 +10,8 @@ public:
     vector<string> reserved_seats;
     vector<vector<string>> details = {  {"Flight Number"},
                                         {"Source"},
-                                        { "Destination"},
-                                        { "Total Seats"}, 
+                                        {"Destination"},
+                                        {"Total Seats"}, 
                                         {"Booked Seats"},
                                         {"Available Seats"}};
 
@@ -88,7 +88,11 @@ public:
                 }
             }      
         }
-        }
+    }
+
+
+
+
         
     
 
