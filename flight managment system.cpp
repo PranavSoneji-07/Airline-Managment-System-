@@ -77,7 +77,12 @@ public:
         for(int i = 0; i<details[0].size(); i++){
             if(details[0][i] == c_number){
                 for (int j = 0; j<name.size(); j++){
-
+                    if(name[j] == c_name){
+                        name.erase(name.begin() + j);
+                        reserved_seats.erase(reserved_seats.begin() + j);
+                        details[5][i] = stoi(details[5][i]) + stoi(reserved_seats[j]);
+                        cout<<"Seats cancelled successfully!"<<endl;
+                    }
                 }
                 }
                 else{
@@ -89,7 +94,7 @@ public:
             }
         }
         
-    }
+    
 
 
 
