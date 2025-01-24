@@ -82,16 +82,12 @@ public:
                         reserved_seats.erase(reserved_seats.begin() + j);
                         details[5][i] = stoi(details[5][i]) + stoi(reserved_seats[j]);
                         cout<<"Seats cancelled successfully!"<<endl;
+                        break;
                     }
+
                 }
-                }
-                else{
-                    cout<<"Seats not available!"<<endl;
-                }
-            }
-            else{
-                cout<<"Flight not found!"<<endl;
-            }
+            }      
+        }
         }
         
     
